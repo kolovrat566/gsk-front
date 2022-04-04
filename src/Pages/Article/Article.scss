@@ -1,0 +1,182 @@
+.article {
+  width: 100%;
+
+  .routesArticle {
+    margin: 48px 0 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ACACAC;
+  }
+
+  .article_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;    
+    color: #000000;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #CAC8C8;
+    margin-bottom: 35px;
+  }
+
+  .article_content {
+    display: flex;
+
+    .article_content_container {
+      width: 57vw;
+      margin-left: 40px;
+
+      .article_content_container_title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 46px;  
+        color: #000000;
+      }
+
+      .article_content_container_title_2 {
+        margin: 28px 0;
+      }
+
+      .article_content_container_title_3 {
+        margin: 0 0 21px;
+      }
+
+      .article_content_container_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        white-space: pre-wrap;
+      }
+
+      .article_content_container_text_2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 32px;        
+        font-feature-settings: 'salt' on, 'liga' off;
+        color: #000000;
+        margin-bottom: 24px;
+      }
+
+      .article_content_text_image {
+        display: flex;
+
+        span {
+          margin: 27px 15px 0 0;
+          width: 457px;
+        }
+
+        img {
+          height: 306px;
+          width: 345px;
+          margin-bottom: 33px;
+        }
+      }
+
+      .article_content_container_list_container {
+
+        .article_content_container_list {
+          margin: 20px 0 96px;
+
+          .article_content_container_list_element {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+
+          .article_content_container_list_item_cube {
+            min-width: 9px;
+            width: 9px;
+            height: 9px;
+            background: #FFAD00;
+            margin-right: 19px;
+          }
+
+          .article_content_container_list_item_text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            
+            color: #000000;
+
+          }
+        }
+        }
+      }
+
+      .article_content_container_form {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;        
+        font-feature-settings: 'salt' on, 'liga' off;
+        color: #474A57;
+
+        .article_content_container_inputs {
+          display: flex;
+          justify-content: space-between;
+
+          .article_content_container_inputHalf {
+            width: calc(50% - 23px);
+            height: 52px;
+            background: #F4F5F7;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 19px;
+            padding: 14px 0 14px 16px;
+          }
+        }
+
+        .article_content_container_inputFull {
+          width: calc(100% - 56px);
+          height: 162px;
+          background: #F4F5F7;
+          border-radius: 5px 0px 0px 5px;
+          border: none;
+          margin-bottom: 16px;
+          padding: 57px 0 14px 57px;
+          white-space: pre;
+        }
+
+        .article_content_container_sendMessage {
+          display: flex;
+
+          .article_content_container_sendMessage_checkbox {
+            display: flex;
+
+          }
+
+          .article_content_container_sendMessage_btn {
+            height: 70px;
+            background: #FFAD00;
+            border-radius: 5px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            font-feature-settings: 'salt' on, 'liga' off;
+            color: #000000;
+            padding: 20px;
+            border: none;
+          }
+
+        }
+
+      }
+    }
+
+  }
+}

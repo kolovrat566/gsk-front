@@ -11,13 +11,23 @@ export const Mainlayout = ({children}) => {
     <div className="root">
       <div className='mainLayout_header'>
         <div className='mainLayout_header_leftMenu'>
-          <button className='mainLayout_header_leftMenu_button'>О компании</button>
-          <button className='mainLayout_header_leftMenu_button'>Каталог товаров</button>
-          <button className='mainLayout_header_leftMenu_button'>Цены</button>
-          <button className='mainLayout_header_leftMenu_button'>Статьи</button>
+          <button className='mainLayout_header_leftMenu_button' onClick={() => window.location = '/about'}>
+            О компании
+          </button>
+          <button className='mainLayout_header_leftMenu_button' onClick={() => window.location = '/catalog'}>
+            Каталог товаров
+          </button>
+          <button className='mainLayout_header_leftMenu_button' onClick={() => window.location = '/price'}>
+            Цены
+          </button>
+          <button className='mainLayout_header_leftMenu_button' onClick={() => window.location = '/article'}>
+            Статьи
+          </button>
         </div>
         <div className='logoSvg'><GskLogo/></div>
-        <div className='basket'><Basket/></div>
+        <div className='basket' onClick={() => window.location = '/busket'}>
+          <Basket/>
+        </div>
       </div>
       <div className='mainLayout_content'>{children}</div>
     </div>

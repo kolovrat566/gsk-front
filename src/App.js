@@ -11,8 +11,21 @@ import { Home } from './Pages/Home';
 import { OneArcticle } from './Pages/OneArcticle';
 import { ProdCart } from './Pages/ProdCard';
 import { Zakaz } from './Pages/Zakaz';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllProducts, getProductCategories } from './Redux/nameStore/action';
 
 function App() {
+  const dispatch = useDispatch()
+  const productCategories = useSelector(data => data)
+  console.log(productCategories);
+
+  useEffect(() => {
+    dispatch(getProductCategories())
+    dispatch(getAllProducts())
+
+  }, [])
+
   return (
     <div className="App">
     <Router>
